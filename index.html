@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <!-- Add your Google Analytics tag here later -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Thoughtful Investor | A Yach Advisors Podcast</title>
+
+  <meta
+    name="description"
+    content="The Thoughtful Investor is a podcast hosted by Bryan Yach, CFP®, exploring investing, financial planning, markets, investor behavior, and the decisions that shape our financial lives."
+  />
+
+  <meta
+    name="keywords"
+    content="The Thoughtful Investor, Bryan Yach, CFP, Yach Advisors, investing podcast, financial planning podcast, investor behavior, markets, wealth management, financial education"
+  />
+
+  <meta name="author" content="Bryan Yach, CFP®" />
+
+  <!-- Replace this once your custom domain is connected -->
+  <link
+    rel="canonical"
+    href="https://bryancfp.github.io/thoughtfulinvestorpodcast/"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Thoughtful Investor" />
+  <meta
+    property="og:description"
+    content="Thoughtful conversations about investing, financial planning, markets, and the decisions that shape our financial lives."
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://bryancfp.github.io/thoughtfulinvestorpodcast/"
+  />
+  <meta
+    property="og:image"
+    content="https://bryancfp.github.io/thoughtfulinvestorpodcast/YA_podcast.png"
+  />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Thoughtful Investor" />
+  <meta
+    name="twitter:description"
+    content="Thoughtful conversations about investing, financial planning, markets, and the decisions that shape our financial lives."
+  />
+  <meta
+    name="twitter:image"
+    content="https://bryancfp.github.io/thoughtfulinvestorpodcast/YA_podcast.png"
+  />
+
+  <style>
+    :root {
+      --navy: #081729;
+      --navy-light: #102542;
+      --navy-soft: #142b4b;
+      --gold: #b59a4a;
+      --gold-light: #cdb468;
+      --white: #f7f7f5;
+      --text: #d9dde3;
+      --muted: #9aa5b3;
+      --border: rgba(255, 255, 255, 0.1);
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(
+          circle at 20% 5%,
+          rgba(38, 73, 119, 0.28),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #071426 0%,
+          #081729 48%,
+          #06111f 100%
+        );
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 23, 41, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 760px;
+      display: grid;
+      align-items: center;
+      padding: 80px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(4rem, 7.4vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.045em;
+      text-transform: uppercase;
+      font-weight: 700;
+      max-width: 760px;
+    }
+
+    .hero h1 .thoughtful {
+      display: inline-block;
+      border-bottom: 4px solid var(--gold);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      margin: 34px 0 0;
+      max-width: 680px;
+      color: var(--text);
+      font-size: 1.2rem;
+      line-height: 1.75;
+    }
+
+    .hero-host {
+      margin-top: 22px;
+      color: var(--gold-light);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 24px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--white);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .cover-wrap {
+      position: relative;
+    }
+
+    .cover-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 10% -8% -8% 10%;
+      background: rgba(14, 44, 80, 0.7);
+      filter: blur(45px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .podcast-cover {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.45),
+        0 5px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Sections */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid var(--border);
+    }
+
+    .section-kicker {
+      margin: 0 0 16px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+
+    .section-title {
+      font-size: clamp(2.5rem, 5vw, 4.3rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin: 0;
+      max-width: 850px;
+    }
+
+    .section-copy {
+      max-width: 760px;
+      margin-top: 24px;
+      color: var(--text);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    /* Latest episode */
+
+    .episode-card {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: 50px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border);
+      padding: 28px;
+    }
+
+    .episode-image {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .episode-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .episode-label {
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .episode-content h3 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .episode-content p {
+      color: var(--text);
+      font-size: 1.02rem;
+      max-width: 640px;
+      margin: 22px 0 0;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .about-highlight {
+      border-left: 3px solid var(--gold);
+      padding-left: 30px;
+      font-size: 1.55rem;
+      line-height: 1.45;
+      color: var(--white);
+    }
+
+    .about-copy p {
+      margin-top: 0;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    /* Host */
+
+    .host-card {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .host-placeholder {
+      min-height: 520px;
+      background:
+        linear-gradient(
+          140deg,
+          rgba(181, 154, 74, 0.08),
+          rgba(255,255,255,0.025)
+        );
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-align: center;
+      padding: 30px;
+    }
+
+    .host-content h2 {
+      margin: 0 0 22px;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .host-content p {
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    /* Yach Advisors */
+
+    .advisor-box {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.015)
+      );
+      border: 1px solid var(--border);
+      padding: 50px;
+    }
+
+    .advisor-box h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4vw, 3.3rem);
+      letter-spacing: -0.035em;
+    }
+
+    .advisor-box p {
+      max-width: 760px;
+      color: var(--text);
+      margin: 18px 0 0;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 55px 0 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand span {
+      color: var(--gold);
+    }
+
+    .disclaimer {
+      max-width: 850px;
+      line-height: 1.65;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      color: var(--text);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid,
+      .episode-card,
+      .about-grid,
+      .host-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 50px;
+      }
+
+      .cover-wrap {
+        max-width: 580px;
+      }
+
+      .episode-card {
+        padding: 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero h1 {
+        font-size: clamp(3.3rem, 17vw, 5rem);
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .advisor-box {
+        padding: 30px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">
+        The <span>Thoughtful</span> Investor
+      </a>
+
+      <nav class="nav-links">
+        <a href="#latest">Episodes</a>
+        <a href="#about">About</a>
+        <a href="#host">Bryan Yach</a>
+        <a href="#yach-advisors">Yach Advisors</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">A Yach Advisors Podcast</div>
+
+          <h1>
+            The
+            <span class="thoughtful">Thoughtful</span>
+            Investor
+          </h1>
+
+          <p class="hero-subtitle">
+            Good investing begins with an honest assessment of what you know,
+            what you don't, and how you make decisions when the future is
+            uncertain.
+          </p>
+
+          <div class="hero-host">
+            Hosted by Bryan Yach, CFP®
+          </div>
+
+          <div class="hero-actions">
+            <a href="#latest" class="button button-primary">
+              Listen to the Podcast
+            </a>
+
+            <a href="#about" class="button button-secondary">
+              About the Show
+            </a>
+          </div>
+        </div>
+
+        <div class="cover-wrap">
+          <img
+            src="YA_podcast.png"
+            alt="The Thoughtful Investor podcast cover"
+            class="podcast-cover"
+          />
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LATEST EPISODE -->
+
+    <section id="latest" class="section-border">
+      <div class="container">
+
+        <p class="section-kicker">Latest Episode</p>
+
+        <h2 class="section-title">
+          Thoughtful conversations about money, markets, and investing.
+        </h2>
+
+        <div class="episode-card">
+
+          <img
+            src="YA_podcast.png"
+            alt="The Thoughtful Investor podcast artwork"
+            class="episode-image"
+          />
+
+          <div class="episode-content">
+
+            <div class="episode-label">
+              Coming Soon
+            </div>
+
+            <h3>
+              The Thoughtful Investor
+            </h3>
+
+            <p>
+              New episodes will explore investing, financial planning,
+              markets, investor behavior, economic history, and the decisions
+              that shape our financial lives.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#" class="button button-primary">
+                Listen
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section-border">
+      <div class="container about-grid">
+
+        <div>
+          <p class="section-kicker">About the Podcast</p>
+
+          <h2 class="section-title">
+            Investing deserves more than headlines and hot takes.
+          </h2>
+        </div>
+
+        <div class="about-copy">
+
+          <div class="about-highlight">
+            The Thoughtful Investor is about understanding why we make the
+            financial decisions we do — and how better thinking can lead to
+            better outcomes.
+          </div>
+
+          <p>
+            Markets are noisy. Financial information is everywhere. Yet more
+            information does not always create better investors.
+          </p>
+
+          <p>
+            The Thoughtful Investor explores the ideas behind successful
+            investing and financial planning: risk, uncertainty, valuation,
+            behavior, diversification, patience, incentives, and the limits
+            of what any of us can know.
+          </p>
+
+          <p>
+            The goal is not to predict the next market move. It is to become
+            better at thinking about money.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- HOST -->
+
+    <section id="host" class="section-border">
+      <div class="container host-card">
+
+        <div class="host-placeholder">
+          Add a professional photo of Bryan here later.
+        </div>
+
+        <div class="host-content">
+
+          <p class="section-kicker">Your Host</p>
+
+          <h2>
+            Bryan Yach, CFP®
+          </h2>
+
+          <p>
+            Bryan Yach is a CERTIFIED FINANCIAL PLANNER™ professional and
+            financial advisor with more than 15 years of experience helping
+            individuals and families navigate investing, retirement, and
+            complex financial decisions.
+          </p>
+
+          <p>
+            Before founding Yach Advisors, Bryan spent much of his career
+            working with affluent and high-net-worth families at one of the
+            largest financial institutions in the United States.
+          </p>
+
+          <p>
+            The Thoughtful Investor grew from a simple belief: financial
+            education should help people think more clearly, not simply give
+            them more information.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- YACH ADVISORS -->
+
+    <section id="yach-advisors" class="section-border">
+      <div class="container">
+
+        <div class="advisor-box">
+
+          <p class="section-kicker">Yach Advisors</p>
+
+          <h2>
+            Financial planning built around your life.
+          </h2>
+
+          <p>
+            The Thoughtful Investor is produced by Yach Advisors, an
+            independent financial planning and wealth management firm serving
+            individuals and families seeking thoughtful, comprehensive
+            financial guidance.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="https://www.yachadvisors.com/"
+              class="button button-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Yach Advisors
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container footer-grid">
+
+      <div>
+
+        <div class="footer-brand">
+          The <span>Thoughtful</span> Investor
+        </div>
+
+        <div class="disclaimer">
+          The Thoughtful Investor is provided for educational and informational
+          purposes only and should not be considered individualized investment,
+          tax, legal, or financial advice. Investing involves risk, including
+          the possible loss of principal. Past performance does not guarantee
+          future results. Please consult appropriate professionals regarding
+          your individual circumstances.
+        </div>
+
+        <div style="margin-top: 20px;">
+          © 2026 Yach Advisors. All rights reserved.
+        </div>
+
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#latest">Episodes</a>
+        <a href="https://www.yachadvisors.com/" target="_blank" rel="noopener noreferrer">
+          Yach Advisors
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
