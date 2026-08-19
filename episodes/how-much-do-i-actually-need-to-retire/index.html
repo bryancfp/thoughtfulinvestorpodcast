@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XNRVTQM1VY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XNRVTQM1VY');
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Favicons -->
+<link href="/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/images/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/images/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/images/favicon-512.png" rel="icon" sizes="512x512" type="image/png"/>
+<title>How Much Money Do You Actually Need to Retire? | The Thoughtful Investor</title>
+<meta content="How much money do you need to retire? Bryan Yach, CFP® explains how spending, Social Security, pensions, withdrawal rates, taxes, inflation, longevity, and investment risk shape your personal retirement number." name="description"/>
+<meta content="how much do I need to retire, how much money to retire, retirement planning, retirement income, retirement savings, retirement number, 4% rule, retirement withdrawal rate, Social Security, financial planning, CFP" name="keywords"/>
+<meta content="Bryan Yach, CFP®" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.thoughtfulinvestorpodcast.com/episodes/how-much-do-i-actually-need-to-retire" rel="canonical">
+<link href="https://feeds.buzzsprout.com/2636006.rss" rel="alternate" title="The Thoughtful Investor Podcast RSS Feed" type="application/rss+xml">
+<!-- Open Graph -->
+<meta content="article" property="og:type"/>
+<meta content="The Thoughtful Investor" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="How Much Money Do You Actually Need to Retire? | The Thoughtful Investor" property="og:title"/>
+<meta content="There is no universal retirement number. Start with the life you want, the income you already have, and the gap your portfolio needs to fill." property="og:description"/>
+<meta content="https://www.thoughtfulinvestorpodcast.com/episodes/how-much-do-i-actually-need-to-retire" property="og:url"/>
+<meta content="https://www.thoughtfulinvestorpodcast.com/YA_podcast.png" property="og:image"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="How Much Money Do You Actually Need to Retire? | The Thoughtful Investor" name="twitter:title"/>
+<meta content="How spending, Social Security, withdrawal rates, taxes, inflation, longevity, and risk come together to determine your retirement number." name="twitter:description"/>
+<meta content="https://www.thoughtfulinvestorpodcast.com/YA_podcast.png" name="twitter:image"/>
+<!-- PodcastEpisode structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "name": "How Much Money Do You Actually Need to Retire?",
+  "url": "https://www.thoughtfulinvestorpodcast.com/episodes/how-much-do-i-actually-need-to-retire",
+  "description": "How much money do you need to retire? Bryan Yach, CFP\u00ae explains how spending, Social Security, pensions, withdrawal rates, taxes, inflation, longevity, and investment risk shape your personal retirement number.",
+  "image": "https://www.thoughtfulinvestorpodcast.com/YA_podcast.png",
+  "episodeNumber": 3,
+  "partOfSeason": {
+    "@type": "PodcastSeason",
+    "seasonNumber": 1
+  },
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "The Thoughtful Investor",
+    "url": "https://www.thoughtfulinvestorpodcast.com/",
+    "webFeed": "https://feeds.buzzsprout.com/2636006.rss"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Bryan Yach",
+    "honorificSuffix": "CFP\u00ae",
+    "url": "https://www.yachadvisors.com/about-us"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yach Advisors",
+    "url": "https://www.yachadvisors.com/"
+  }
+}
+</script>
+<style>
+    :root {
+      --navy: #081729;
+      --navy-2: #0d2139;
+      --navy-3: #112a49;
+      --gold: #b79a49;
+      --gold-light: #cfb667;
+      --white: #f6f7f8;
+      --text: #d7dde5;
+      --muted: #9ca8b8;
+      --border: rgba(255, 255, 255, 0.10);
+      --max: 1180px;
+      --article: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 16% 8%,
+          rgba(42, 79, 126, 0.30),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          #071426 0%,
+          var(--navy) 48%,
+          #06101d 100%
+        );
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .article-container {
+      width: min(92%, var(--article));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 23, 41, 0.90);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .brand {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.94rem;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* EPISODE HERO */
+
+    .episode-hero {
+      padding: 92px 0 78px;
+    }
+
+    .episode-grid {
+      display: grid;
+      grid-template-columns: 1.22fr 0.78fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+    }
+
+    .episode-hero h1 {
+      margin: 0;
+      max-width: 850px;
+      font-size: clamp(3.1rem, 6.2vw, 6rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .episode-deck {
+      max-width: 760px;
+      margin: 30px 0 0;
+      color: var(--text);
+      font-size: 1.2rem;
+      line-height: 1.75;
+    }
+
+    .episode-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .episode-meta strong {
+      color: var(--gold-light);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 50px;
+      padding: 0 24px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      color: var(--white);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .cover-wrap {
+      position: relative;
+    }
+
+    .cover-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 10% -8% -8% 10%;
+      background: rgba(19, 57, 99, 0.70);
+      filter: blur(50px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .podcast-cover {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.46),
+        0 5px 24px rgba(0, 0, 0, 0.34);
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid var(--border);
+    }
+
+    .section-kicker {
+      margin: 0 0 16px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+    }
+
+    .section-title {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(2.3rem, 4.7vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .section-copy {
+      max-width: 790px;
+      margin-top: 24px;
+      color: var(--text);
+      font-size: 1.06rem;
+      line-height: 1.82;
+    }
+
+    /* PLAYER */
+
+    .podcast-player {
+      margin-top: 38px;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border);
+    }
+
+    .platform-heading {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .platform-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .platform-links a {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .platform-links img {
+      height: 44px;
+      width: auto;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .platform-links img:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    /* KEY IDEAS */
+
+    .key-ideas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+    }
+
+    .idea-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .idea-number {
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .idea-card h3 {
+      margin: 12px 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .idea-card p {
+      margin: 0;
+      color: var(--text);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    /* TRANSCRIPT */
+
+    .transcript-wrap {
+      max-width: var(--article);
+    }
+
+    .transcript-intro {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 18px 0 36px;
+    }
+
+    .transcript {
+      color: var(--text);
+      font-size: 1.06rem;
+      line-height: 1.9;
+    }
+
+    .transcript p {
+      margin: 0 0 1.45em;
+    }
+
+    /* HOST */
+
+    .host-card {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .host-image-wrap {
+      overflow: hidden;
+      min-height: 420px;
+      border: 1px solid var(--border);
+      background: var(--navy-2);
+    }
+
+    .host-image {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .host-content h2 {
+      margin: 0 0 22px;
+      font-size: clamp(2.3rem, 4.8vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .host-content p {
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    .advisor-box {
+      padding: 50px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.015)
+        );
+    }
+
+    .advisor-box h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4vw, 3.3rem);
+      letter-spacing: -0.035em;
+    }
+
+    .advisor-box p {
+      max-width: 820px;
+      margin-top: 18px;
+      color: var(--text);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 55px 0 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      margin-bottom: 12px;
+      color: var(--white);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-brand span {
+      color: var(--gold);
+    }
+
+    .disclaimer {
+      max-width: 900px;
+      line-height: 1.7;
+    }
+
+    .compliance-disclosure {
+      max-width: 900px;
+      margin-top: 18px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--text);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 900px) {
+      .episode-grid,
+      .host-card {
+        grid-template-columns: 1fr;
+      }
+
+      .episode-grid {
+        gap: 50px;
+      }
+
+      .cover-wrap {
+        max-width: 580px;
+      }
+
+      .key-ideas {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .episode-hero {
+        padding-top: 55px;
+      }
+
+      .episode-hero h1 {
+        font-size: clamp(2.9rem, 14vw, 4.7rem);
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .podcast-player {
+        padding: 14px;
+      }
+
+      .platform-links img {
+        height: 40px;
+      }
+
+      .advisor-box {
+        padding: 30px 24px;
+      }
+
+      .host-image-wrap,
+      .host-image {
+        min-height: 380px;
+      }
+    }
+  </style>
+</link></link></head>
+<body>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="/">
+        The <span>Thoughtful</span> Investor
+      </a>
+<nav class="nav-links">
+<a href="/episodes/">Episodes</a>
+<a href="#listen">Listen</a>
+<a href="#episode">Episode</a>
+<a href="#transcript">Transcript</a>
+<a href="#host">Bryan Yach</a>
+<a href="https://www.yachadvisors.com/" rel="noopener noreferrer" target="_blank">
+          Yach Advisors
+        </a>
+</nav>
+</div>
+</header>
+<main>
+<!-- EPISODE HERO -->
+<section class="episode-hero">
+<div class="container episode-grid">
+<div>
+<div class="eyebrow">The Thoughtful Investor · Season 1, Episode 3</div>
+<h1>How Much Money Do You Actually Need to Retire?</h1>
+<p class="episode-deck">There is no universal retirement number. The better question is what your money needs to do: fund the life you want, fill the gap left by Social Security and other income, withstand taxes and inflation, and survive the uncertainty of markets and longevity.</p>
+<div class="episode-meta">
+<span><strong>Hosted by:</strong> Bryan Yach, CFP®</span>
+<span><strong>Podcast:</strong> The Thoughtful Investor</span>
+</div>
+<div class="hero-actions">
+<a class="button button-primary" href="#listen">
+              Listen to the Episode
+            </a>
+<a class="button button-secondary" href="#transcript">
+              Read the Transcript
+            </a>
+</div>
+</div>
+<div class="cover-wrap">
+<img alt="The Thoughtful Investor podcast cover" class="podcast-cover" src="/YA_podcast.png"/>
+</div>
+</div>
+</section>
+<!-- LISTEN -->
+<section class="section-border" id="listen">
+<div class="container">
+<p class="section-kicker">
+          Listen
+        </p>
+<h2 class="section-title">There isn’t one retirement number. There’s a process for finding yours.</h2>
+<p class="section-copy">In this episode, Bryan walks through a practical framework for determining how much you may need to retire—starting with spending and the retirement income gap, then considering Social Security, pensions, portfolio withdrawals, taxes, inflation, longevity, asset allocation, and sequence-of-returns risk.</p>
+<div class="podcast-player"><div style="padding: 24px; color: #9ca8b8; text-align: center;"><div id="buzzsprout-player-19667408"></div><script charset="utf-8" src="https://www.buzzsprout.com/2636006/episodes/19667408-how-much-money-do-you-actually-need-to-retire.js?container_id=buzzsprout-player-19667408&amp;player=small" type="text/javascript"></script></div></div>
+<div class="platform-heading">
+          Follow The Thoughtful Investor
+        </div>
+<div class="platform-links">
+<a aria-label="Listen to The Thoughtful Investor on Apple Podcasts" href="https://podcasts.apple.com/us/podcast/the-thoughtful-investor/id6799772768" rel="noopener noreferrer" target="_blank">
+<img alt="Listen on Apple Podcasts" src="/assets/badges/applelink.png"/>
+</a>
+<a aria-label="Listen to The Thoughtful Investor on Spotify" href="https://open.spotify.com/show/0344nzVulnySTeRGwEBiur" rel="noopener noreferrer" target="_blank">
+<img alt="Listen on Spotify" src="/assets/badges/spotifylink.png"/>
+</a>
+<a aria-label="Listen to The Thoughtful Investor on Amazon Music" href="https://music.amazon.com/podcasts/b146b106-b48d-4183-8e0e-325678eac903" rel="noopener noreferrer" target="_blank">
+<img alt="Listen on Amazon Music" src="/assets/badges/amazonlink.png"/>
+</a>
+<a aria-label="Watch The Thoughtful Investor on YouTube" href="https://www.youtube.com/playlist?list=PLcUXU7UI8oOM" rel="noopener noreferrer" target="_blank">
+<img alt="Watch on YouTube" src="/assets/badges/youtubelink.png"/>
+</a>
+</div>
+</div>
+</section>
+<!-- ABOUT THE EPISODE -->
+<section class="section-border" id="episode">
+<div class="container">
+<p class="section-kicker">
+          About This Episode
+        </p>
+<h2 class="section-title">Start with the life. Then determine what the money has to do.</h2>
+<p class="section-copy">The question “How much do I need to retire?” sounds like it should have a single numerical answer. But retirement planning works in the opposite direction. First define the lifestyle, spending, timing, and priorities. Only then can you estimate the resources required to support them.</p>
+<p class="section-copy">A key step is calculating the retirement income gap. Social Security, pensions, rental income, or other reliable cash flow may cover part of your spending. Your investments are responsible for funding what remains—not necessarily replacing your entire pre-retirement salary.</p>
+<p class="section-copy">From there, the plan has to account for uncertainty. Withdrawal rates are useful planning tools, but taxes, inflation, longevity, market returns, asset allocation, and the timing of market declines can all change what a sustainable retirement looks like.</p>
+<div class="key-ideas">
+<div class="idea-card">
+<div class="idea-number">Idea 01</div>
+<h3>Start with spending, not a magic number</h3>
+<p>Your retirement target begins with the life you expect to fund—not an arbitrary portfolio balance or a multiple of salary.</p>
+</div>
+<div class="idea-card">
+<div class="idea-number">Idea 02</div>
+<h3>Find the income gap</h3>
+<p>Subtract Social Security, pensions, and other dependable income from expected spending. The remainder is the job your portfolio must perform.</p>
+</div>
+<div class="idea-card">
+<div class="idea-number">Idea 03</div>
+<h3>Time and risk matter</h3>
+<p>A portfolio must do more than produce an average return. It needs enough flexibility to endure inflation, longevity, and poor markets without forcing permanent losses at the wrong time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TRANSCRIPT -->
+<section class="section-border" id="transcript">
+<div class="article-container transcript-wrap">
+<p class="section-kicker">
+          Episode Transcript
+        </p>
+<h2 class="section-title">Read S1E3: How Much Money Do You Actually Need to Retire?</h2>
+<p class="transcript-intro">Transcript generated from the episode subtitles and lightly edited for readability. Minor transcription errors in proper names and regulatory disclosures have been corrected.</p>
+<div class="transcript"><p>How much money do you need to retire? A million dollars? Two million? Five million? According to the Federal Reserve, only about 35% of Americans who haven't yet retired believe their retirement savings are on track. 35%. Vanguard's latest How America Saves report looked at nearly five million people participating in workplace retirement plans. The average account balance was about $148,000. Okay, $148,000, but the average doesn't tell the whole story. The median balance was about $38,000. In other words, the typical retirement saver isn't sitting on $148,000. Half of people in those plans have less than $38,000 saved. That's less than half of the median household income. Six months. The College of Financial Planning recommends that as your emergency fund or your liquid cash reserve.</p><p>So it's probably not surprising that millions of Americans go online looking for an answer to a seemingly simple question. How much do I need to retire? Search that question online, you won't have to look very far for an answer. There's plenty of financial gurus willing to give you a number or a simple rule of thumb that promises to tell you how much you need. 25 times your expenses, 10 times your salary, save this percentage, withdraw that percentage. Rules of thumb can be useful. They give us a place to start, but should you trust one with your retirement? With a decision that important? Because you're not a number, you're a person with life experience, habits, good or bad, a lifetime of joy and complications thrown your way. Nobody understands you better than you. A Fed or Vanguard study doesn't necessarily encapsulate you.</p><p>So today, instead of giving you another magical retirement number, we're going to figure out what exactly determines how much you need to retire. You're listening to the thoughtful investor podcast brought to you by Yawq Advisors. The problem with asking how much money do I need to retire is that we're starting with the answer. It's like asking how much gas you need for a road trip before you decide where you're going or before owning a car for that matter. We're looking for a number before we've defined what that number actually needs to accomplish because after all, retirement doesn't have a price tag on it. If you plan to retire in your sixties, you're working to fund a lifestyle that could last 20, 30, 40 years with expenses that will inevitably change, investing in markets that are unpredictable, inflation that compounds, and uncertainty on how long you or your spouse will live.</p><p>So I think a better way to approach the question instead of starting with your investment is start with your life. Start with here and now. What does it cost to live the way you live today? Then subtract out some of the expenses you anticipate going away. For example, will your mortgage be paid off? That's a pretty easy one. Will your kids stay living with you? Hey, it's 2026. Then go in and add the expenses you'd like to be able to cover in retirement that maybe you aren't spending today. These might include expenses for travel, fine dining, buying that camper that you always wanted to take around the country. Don't worry about inflation yet. Let's look at the things and what they cost in today's dollars. We just need a starting point. Now we get to income.</p><p>A question I ask a lot that people are less prepared for is how does social security pensions and other income fit into your picture? I find the majority of families I meet with either haven't put a lot of thought into it or maybe try to plan without it. Maybe they've seen a headline saying social security is going bankrupt, implying that we're going to be on our own soon. If you're in that camp, I'll address that in another episode. I think that's an important concern to address. But for now though, let's assume social security is going to be there. If you have a pension, great. You're in the minority. When can you take the pension? How is it taxed? And are there any benefits to delaying? Does it grow each year you delay? What would happen if your former company bankrupt? Are you protected by the PBGC? What other income sources do you have?</p><p>Do you have passive income like real estate properties? Do those properties give you reliable passive income? And how long do you plan on holding those properties? Do you want to be a landlord when you're 90? Do you have any investment income like a bond portfolio, dividend stocks, or annuity accounts? Do the annuities offer a guaranteed income? And what's the worst case for a mortgage? So at this point, we have the beginnings of a retirement cash flow plan. Money coming in, money going out. You can jot this down on the back of a napkin or use your impressive excel skills. The important thing is that you actually do the work. An advisor can help you think through some of these expenses, but the heavy lifting of understanding how you live, how you want to live in retirement, is on you. The next step is to pick an age.</p><p>The age at which you retire is extremely important because retiring at 55 and retiring at 70 are two completely different financial planning problems. There's a few ages I want you to keep in mind. 55, 59 and a half, 62, 65, 67, and 70. I'll repeat those in case you want to jot them down. 55, 59 and a half, 62, 65, 67, and 70. Let's start with 55. Some pension plans may offer benefits to begin around this age, depending on the plan. It's also important for something known as Rule of 55 for workplace plans. If you separate from your employer during or after the calendar year in which you turn 55, you may be able to take distributions from that employer's 401(k) without the usual 10% early withdrawal penalty. This generally applies to employers' plan, not the IRAs. IRAs have different set of rules, including a strategy you may have heard called 72(t) or SEPP.</p><p>That's a rabbit hole of its own. We'll dedicate a whole video to retiring before 59 and a half. What strategies are there for retirees that want to retire early? So the next number is 59 and a half. This is the age when the 10% additional tax on early distribution generally stops applying to withdraws from traditional IRAs and many employer-sponsored retirement plans. That doesn't mean the withdraw is tax-free, of course. It means that you've crossed an important threshold where the additional early distribution penalty no longer applies. And Roth IRAs have their own rules involving contributions, earnings, five-year rules, so don't assume every retirement account works exactly the same way. Just remember that 59 and a half, that's a pretty important milestone for retirement plans. So the next is 62. Social Security enters the picture.</p><p>For most people today, this is the earliest age you can begin receiving retirement benefits. But of course, the downside is claiming early generally accepting a permanently reduced monthly benefit. That doesn't automatically make 62 the wrong age, it just means you're making a trade-off. And also keep in mind there's penalties for if you continue working, you have a higher income, and you drew at 62, you're not full retirement age yet, you might be penalized. But in essence, at 62 you're getting income sooner in exchange for a smaller monthly benefit for the rest of your life. We'll skip 65 for a second. Let's move on 67 and 70. For someone born in 1960 or later, 67 is currently full retirement age for Social Security. That doesn't mean you have to retire at 67, and it doesn't mean you have to claim Social Security at 67.</p><p>It's simply an important Social Security milestone because it's the age at which you're eligible for your full retirement benefit based on your earnings record. If you delay Social Security beyond full retirement age, your retirement benefit generally continues increasing through delayed retirement credits until age 70. After 70, there's no additional benefit for delaying your retirement benefit simply for the sake of earning more delayed retirement credits. So somewhere between 62 and 70, you have another decision to make. When should Social Security become part of the income plan? If you're married, Social Security becomes a decision that two of you really need to make together. The difference between your benefit matters, but one of the biggest considerations is life expectancy. Social Security, like pensions and fixed annuities, is built around actuarial assumptions.</p><p>In general, the longer you live, the more valuable delaying Social Security can become. And being married adds another consideration, survivor benefits. If one spouse dies, the surviving spouse may be able to receive the higher of the two Social Security benefits rather than simply being left with their own lower benefit. So if one spouse has a substantially larger Social Security benefit, delaying that benefit isn't necessarily just a decision about that person's lifetime income. You also need to think about the income available to the surviving spouse. For someone whose full retirement age is 67, claiming it's 62 reduces the benefit by as much as 30 percent, compared to waiting until full retirement age. Wait beyond full retirement age and delayed retirement credits increase your benefit by about 8 percent per year all the way until age 70.</p><p>That's a pretty substantial difference in guaranteed monthly income depending on when you decide to start. When you run the numbers, you'll often find the breakeven point. The breakeven being when taking early versus taking later intersect and total number of dollars accumulated. You'll find that the breakeven age is somewhere in your late 70s, early 80s, depending on the exact claiming age that you're comparing. And that's where the life expectancy becomes important. Once you've made it to retirement, your life expectancy is considerably longer than the life expectancy at birth numbers usually here. According to the CDC, a 65 year old man can expect on average to live to about 83 and a 65 year old woman to live to about 86. But you're not an actuarial table. You know things about yourself the table doesn't. What's your health like? What's your family history? What's your lifestyle?</p><p>Do people in your family routinely live into their 90s? Or is there a history that might reasonably lead you to think differently? And perhaps most importantly, do you actually need the Social Security income? Do you have other assets to give you the flexibility to wait? This is called a Social Security bridge. So all that's to say there isn't one correct age for everyone claiming Social Security. That's the point. It's another reason why picking your retirement age and building an income plan has to come before someone tells you that you need a million dollars, two million dollars, five million dollars to retire. This is where having a financial advisor, preferably a fiduciary, can help you determine retirement scenarios. We can run scenarios based on 62, 67, 70 and see what the trade-offs are for each one of those.</p><p>Then we get to 65, which is Medicare eligibility age for most Americans. If you retire at 65, you need to think seriously about how you're going to pay for health care. Let's say you retire at 60. You'll need to create a five-year age. Have you priced it in yet? If not, go back to those expenses you've jotted down on a napkin, add it in there. That's an important one. It's also worth mentioning that health care expenses inflate higher than normal inflation. So if we're using average or above average inflation in our scenarios, are we using a realistic number for health care? So you're 60, you just separated from your company, you may be able to stay on COBRA for a period of time, usually 18 months, maybe your former employer provides retiree healthcare benefits. It's not common, but maybe you're lucky. So what do you do for the gap in coverage?</p><p>You may purchase coverage through the Affordable Care Act marketplace, or look at other coverage available to you. The important thing is that healthcare isn't an afterthought. It needs to be part of the retirement budget we just built. And healthcare planning doesn't disappear once you hit age 65. Higher income Medicare beneficiaries can pay additional premiums through something called ERMA, the income related monthly adjustment amount. In plain English, your income can affect what you pay for Medicare part B and part D. And because Medicare generally looks back at your income from two years earlier, decisions involving things like Roth conversions, investment gains, or large retirement account withdrawals can potentially affect your future premiums. So taxes, healthcare, your withdrawal strategy, Medicare premiums, all interact with each other in retirement.</p><p>And notice what just happened. Picking a retirement age wasn't simply choosing the day you stop going to work. It determined how soon you can access certain accounts, whether you need to build a bridge to healthcare, a bridge to social security, and then determine how many years your investments need to support you, potentially how much income those investments need to produce. That's why age has to come before you, the retirement number. Before I can tell you how much money you need, I need to know when you're asking that money to start working for you. Okay. So you have our retirement age planned out. We've put together our income and expenses. Now what? What we've basically uncovered is our income gap. What do we need to cover the gap? You got it. Your retirement savings. That's what you're saving for, right? That's why you have the 401(k).</p><p>That's why you're deferring that compensation. When I finally retire my jersey, walk out of my company for the last time, is my retirement balance sufficient to cover my lifestyle for 30 to 40 years in retirement? Just a quick note. If you've made it this far, you're probably expecting me to address the rule of 4%. You're exactly right. That's what I'm going to do next. I've worked in financial planning for a long time and here's how I think about the 4% rule. It's useful. It's just not a retirement plan. The problem that I find with it is when a rule of thumb leaves a research paper and gets turned into a universal answer and people start living by that answer. Real people don't spend exactly 4% of their portfolio every year. Life doesn't work like that. They're spending changes, markets change, tax rates change, their health changes. A spouse dies. They buy a house. They sell a house.</p><p>They help a child. They inherit money. They take a trip they've been putting off for 30 years. Life has a habit of refusing to cooperate with a spreadsheet. If the portfolio drops 50%, are you willing to cut your life expenses in half in order to stay at 4%? Otherwise your expenses are now at an 8% draw. Does that mean you have to go back to work? The question is, what do you want your lifestyle and retirement to look like? You don't want the stock market to answer that question for you. Do you plan to only visit the grandkids when the market's up? Letting your balance dictate your life is like letting the tail wag the dog. Your retirement income should support your lifestyle regardless of what's going on in the market. Well, that's all great, Bryan, but if not 4%, what's my number? When we sit down, build a retirement income plan, we want to plan for the worst and hope for the best.</p><p>Those bridge years we talked about, Medicare and Social Security, those expenses dropping off, maybe your mortgage is paid off a few years into retirement, maybe you're moving to another state or retiring on the beach. Maybe that impacts your expenses. This creates a level of variability where a rule of thumb starts to break down really quickly. Not to mention all the curveballs life throws at you. Someone who retires into a bear market with the exact same balance and withdrawal rate can have a massively different result than someone with the same balance and withdrawal rate who retires into a booming market. This is what's known as the sequence of returns risk. For simplicity, however, let's talk about averages. Let's just say you've decided that retirement's going to cost around $120,000 a year in today's dollars, $10,000 a month. You expect $50,000 from Social Security per year.</p><p>Maybe you're one of the increasingly rare people with a pension that'll give you another $20,000 that leaves us with a $50,000 gap and that $50,000 is incredibly important because we finally figured out what your investment accounts are being asked to do. Sidebar, the investment strategy should have reflected this all along. Nothing to be embarrassed about if you've gotten to this point, you've never thought about the income that you want it to produce, but time is of the essence, better late than never. We need our investment strategy and our retirement plan to sync up to match how much time you have and what withdrawal rate that you need for retirement. This is where I encourage my clients to ask themselves a question. How long would you be able to live on your money without selling a single if we mirror the longest recession in US history?</p><p>At this point, we want to use history as our guide because histories are best understanding on how to project to the future. Recessions historically are usually pretty short. The average is about eight to 10 months. We don't notice, however, because a stock market reaction can last significantly longer, depending on the period you're studying and exactly how you measure them. The average bear market has lasted somewhere between a year to a year and a half just to reach the bottom. And then comes the recovery. That might be slow. It might be fast, but the recovery adds time to that. JP Morgan's research puts the average bear market at about 18 months, followed by an average recovery of around 39 months.</p><p>Another analysis from Schwab found that major S&amp;P 500 bear markets took an average of about three years and two months to go from the previous high through the decline and eventually recover to that previous high. The Great Recession back in 2008 lasted 18 months. COVID lasted two months. The recession of 1981 and 82 lasted 16 and the longest ever was the Great Depression from August of 1929 through March of 1933. That's 43 months, three and a half years. Now recession and a bear market aren't the same thing. The economy can recover while your portfolio is still well below where it started, but I think the numbers give us a useful perspective in how to build a retirement plan and how long to plan for a bear market.</p><p>So I'll ask you this now, if we experienced something like that again, and lucky you, it starts the day you retire, how long could you fund your lifestyle without being forced to sell a single stock? One year, three years, five years? When we reframe the question, I think it's a little bit more poignant. This is where we get into asset allocation because your withdrawal rate is the most important factor to helping us determine your investment strategy. Should someone who has a million dollars and a 30,000 per year draw take the same amount of risk as someone who has the same balance and spends 80,000, that's a three or an 8% draw, not likely. We have to draw the line and determine how do we convert your assets to income in a way that's going to give you the best chance of reaching your financial goals. We're not trying to just max returns and hope the market keeps going up.</p><p>That can be dangerous. So let's put all this together. There isn't one retirement number, but there is a process for finding yours. The role of a financial advisor is to help you determine that number, the income strategy throughout the course of your retirement and adjust to changes in your lifestyle. This is an essential discussion to have when approaching retirement income planning. All of this comes back to the same concept, time, because time is money, right? Time to fall, time to recover, and ideally enough time that you aren't forced to turn a temporary decline into a permanent loss because you needed the money at exactly the wrong moment, or that you took too much risk and can't stomach seeing any more red. We need to make these decisions before the bear market, not react to it. And now finally, we have enough information to come back to the question we started with.</p><p>How much money do you actually need to retire? In our example, our investments need to provide $50,000 per year. If you want to use the 4% rule as a starting point, that points us towards $1.25 million. At 3.5%, it's $1.43 million. At 3%, it's $1.67 million and all the way up. So which one's the right number? Well, we still don't know, and that's the point. You're not a statistic. There's a ton of variables that impact that answer. If you're approaching retirement, spend some time thinking about that question. What is my number? Then sit down, work through the exercise we talked about today. Start with your lifestyle. Figure out what it actually costs. Think about what changes in retirement. Add up all the income that'll be coming in. Pick an age. Find the gap. Ask whether the money you've accumulated is prepared to do the job you're asking it to do.</p><p>Once you've answered that question, spend some time on an even more important one. In retirement and in life, who and what matters the most? One final thought in a moment. I'm Bryan Yach, certified financial planner, professional, wealth advisor, and owner of Yock Advisors. Thank you for spending some time with me today. This has been The Thoughtful Investor. If you'd like help working through these questions, that's exactly the kind of planning we do at Yach Advisors. You can learn more about us at yachadvisors.com. And if you found today's episode helpful, follow The Thoughtful Investor on your favorite podcast platform and drop me a review. It helps me improve. It also helps give us traction as a new channel. That way we don't go into a black hole. We'll continue working through the questions that matter most as you plan, invest, and prepare for retirement.</p><p>Now, remember your retirement number is the amount of money required to support the life you want for as long as you need it, while giving you enough flexibility to survive the things you can't predict. The planning that we do together helps take the guesswork out of the uncertainty and places the focus back on the things that matter to you in retirement. Not a number. Not a statistic. You're not that. So I'm going to ask a question again. What matters most to you? The Thoughtful Investor is brought to you by Yach Advisors. Copyright 2026, all rights reserved. Yach Advisors registered branch office is located at 2241 East Continental Boulevard Suite 130, Southlake, Texas 76092. Securities offered through Cetera Wealth Services LLC. Member FINRA/SIPC. Advisory services offered through Cetera Investment Advisers, LLC.</p><p>A registered investment advisor, Suterra is under separate ownership from any other named entity.</p></div>
+</div>
+</section>
+<!-- HOST -->
+<section class="section-border" id="host">
+<div class="container host-card">
+<div class="host-image-wrap">
+<img alt="Bryan Yach, CFP®, financial advisor and host of The Thoughtful Investor podcast" class="host-image" src="/images/Bryan Yach, CFP® Financial Advisor.jpg"/>
+</div>
+<div class="host-content">
+<p class="section-kicker">
+            Your Host
+          </p>
+<h2>
+            Bryan Yach, CFP®
+          </h2>
+<p>
+            Bryan Yach is a CERTIFIED FINANCIAL PLANNER™ professional and
+            financial advisor with more than 15 years of experience helping
+            individuals and families navigate investing, retirement, and complex
+            financial decisions.
+          </p>
+<p>
+            The Thoughtful Investor brings together investing, financial planning,
+            behavioral finance, market history, and the research behind how
+            investors make decisions when the future is uncertain.
+          </p>
+<div class="hero-actions">
+<a class="button button-primary" href="https://www.yachadvisors.com/about-us" rel="noopener noreferrer" target="_blank">
+              Learn More About Bryan
+            </a>
+<a class="button button-secondary" href="/episodes/">
+              More Episodes
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- YACH ADVISORS -->
+<section class="section-border">
+<div class="container">
+<div class="advisor-box">
+<p class="section-kicker">
+            Yach Advisors
+          </p>
+<h2>
+            Financial planning built around your life.
+          </h2>
+<p>
+            The Thoughtful Investor is brought to you by Yach Advisors.
+            Yach Advisors provides comprehensive financial planning and investment
+            guidance for individuals and families navigating retirement, investing,
+            taxes, estate planning, and other important financial decisions.
+          </p>
+<div class="hero-actions">
+<a class="button button-primary" href="https://www.yachadvisors.com/" rel="noopener noreferrer" target="_blank">
+              Visit Yach Advisors
+            </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<div class="container footer-grid">
+<div>
+<div class="footer-brand">
+          The <span>Thoughtful</span> Investor
+        </div>
+<div class="disclaimer">
+          The Thoughtful Investor is provided for educational and informational
+          purposes only and should not be considered individualized investment,
+          tax, legal, or financial advice. Investing involves risk, including
+          the possible loss of principal. Past performance does not guarantee
+          future results. Please consult appropriate professionals regarding
+          your individual circumstances.
+        </div>
+<div class="compliance-disclosure">
+          Yach Advisors' registered branch office is located at
+          2241 E. Continental Blvd, Suite 130, Southlake, TX 76092.
+          Securities offered through Cetera Wealth Services LLC, member FINRA/SIPC.
+          Advisory Services offered through Cetera Investment Advisers, LLC,
+          a registered investment adviser. Cetera is under separate ownership
+          from any other named entity.
+        </div>
+<div style="margin-top: 20px;">
+          © 2026 Yach Advisors. All rights reserved.
+        </div>
+</div>
+<div class="footer-links">
+<a href="/">
+          Home
+        </a>
+<a href="/episodes/">
+          Episodes
+        </a>
+<a href="#listen">
+          Listen
+        </a>
+<a href="#transcript">
+          Transcript
+        </a>
+<a href="https://www.yachadvisors.com/about-us" rel="noopener noreferrer" target="_blank">
+          Bryan Yach
+        </a>
+<a href="https://www.yachadvisors.com/" rel="noopener noreferrer" target="_blank">
+          Yach Advisors
+        </a>
+</div>
+</div>
+</footer>
+</body>
+</html>
